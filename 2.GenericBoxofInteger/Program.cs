@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _1._Generic_Box_of_String
+namespace _2.GenericBoxofInteger
 {
     public class Program
     {
@@ -10,8 +10,8 @@ namespace _1._Generic_Box_of_String
 
             for (int i = 0; i < numberOfLines; i++)
             {
-                string value = Console.ReadLine();
-                Box<string> box = new Box<string>(value);
+                int value = int.Parse(Console.ReadLine());
+                Box<int> box = new Box<int>(value);
 
                 Console.WriteLine(box);
             }
